@@ -1,10 +1,8 @@
 package io.corrlang;
 
-import no.hvl.past.corrlang.domainmodel.CorrLangElement;
-import no.hvl.past.corrlang.parser.SyntacticalResult;
-import no.hvl.past.corrlang.reporting.ReportErrorType;
-import no.hvl.past.corrlang.reporting.ReportFacade;
-import no.hvl.past.corrlang.runner.AbstractRun;
+import io.corrlang.engine.parser.SyntacticalResult;
+import io.corrlang.engine.reporting.ReportFacade;
+import io.corrlang.engine.runner.AbstractRun;
 import no.hvl.past.di.DependencyInjectionContainer;
 import no.hvl.past.di.PropertyHolder;
 import io.corrlang.plugins.ServerStarter;
