@@ -1,0 +1,12 @@
+
+
+dependencies {
+    implementation project(':corr-lang-engine')
+    implementation project(':corr-lang-core')
+    runtimeOnly project(':mdegraphlib-gql')
+    runtimeOnly project(':mdegraphlib-emf')
+    testImplementation project(':mdegraphlib').sourceSets.test.output
+}
+
+test.onlyIf { project.hasProperty('runIntegrationTests') }
+

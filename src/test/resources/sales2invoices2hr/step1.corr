@@ -1,0 +1,32 @@
+endpoint Sales {
+    type SERVER
+    at http://localhost:4011
+    technology GRAPH_QL
+}
+
+endpoint Invoices {
+    type SERVER
+    at http://localhost:4012
+    technology GRAPH_QL
+}
+
+endpoint HR {
+    type SERVER
+    at http://localhost:4013
+    technology GRAPH_QL
+}
+
+
+correspondence Backoffice (Sales, Invoices, HR) {
+
+}
+
+
+goal Draw {
+    correspondence Backoffice
+    action SCHEMA
+    technology IMAGE
+    target FILE {
+        at file:./actualFiles/vizz.png
+    }
+}
